@@ -1,6 +1,6 @@
 # RESTy
 
-### Deploy link on heroku:
+### Deploy link on Netlify:
 
 [Netlify](https://608ecfb57010f9c2fdb8013d--rest-haneen.netlify.app/)
 
