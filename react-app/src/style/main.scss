@@ -1,0 +1,41 @@
+
+
+
+.Main-Class
+{
+    font-weight: bold;
+    text-align: center;
+   
+
+    form
+    {
+        .method
+        {
+            margin-left: 10px;
+        }
+        margin-bottom: 20px;
+
+        input::after
+        {
+            background-color: white;
+        }
+    }
+
+    .User-Input
+    {
+        
+        background-color: rgb(238, 238, 238);
+        height: 500px;
+        width: 80%;
+        border: 2px solid rgba(0, 0, 0, 0.274);
+        margin-left: 150px;
+        margin-bottom: 20px;
+        
+    }
+
+    p
+    {
+        padding: 20px;
+        text-align: left;
+    }
+}
