@@ -1,27 +1,35 @@
 import React from 'react';
 
 
-class Main extends React.Component {
+class Form extends React.Component {
     constructor(props) {
       super(props);
       //initial state of the component
       this.state = {
         value: '',
         method: '',
+        url: '',
+        methodVal : '',
       };
       // this line is needed if you create a function in the class without using arrow functions
      
     }
     // handleSubmit = (e) => {
       
-    //   e.preventDefault();
+    //   
     // }
     handleURL = (e) => {
       const value = e.target.value;
-      // we never ever ever change the state directly
-      // DONT DO THIS >>>>>> this.state = {words}
+    
       this.setState({ value });
     };
+
+    handleclick = (e) => {
+      console.log(this.state)
+      e.preventDefault();
+      this.setState({ url: this.state.value, methodVal: this.state.method });
+    };
+
     render() {
       return (
         <main>
@@ -29,7 +37,7 @@ class Main extends React.Component {
           <form> 
            <label>URL:  </label>
            <input id="url-input" type="text" placeholder = "URL" onChange={this.handleURL} />
-           <input className = "GO" type="button" value="GO!" />
+           <input className = "GO" type="button" value="GO!" onClick= {this.handleclick} />
            <br></br>
            <br></br>
            <input className = "method" type="button" value= "GET" onClick={() => this.setState({method: 'GET'})} />
@@ -41,7 +49,7 @@ class Main extends React.Component {
   
           <div className = "User-Input">
              <p>
-              {this.state.method}        {this.state.value} 
+              {this.state.methodVal}        {this.state.url} 
               
              </p>
           </div>
@@ -52,4 +60,4 @@ class Main extends React.Component {
     }
   }
 
-  export default Main;
+  export default Form;

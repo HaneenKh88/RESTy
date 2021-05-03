@@ -1,10 +1,10 @@
 import logo from './logo.svg';
 import React from 'react';
 import Header from './header';
-import Main from './Main';
+import Form from './Form';
 import Footer from './footer';
 import './style/header.scss';
-import './style/main.scss';
+import './style/Form.scss';
 import './style/footer.scss';
 
 
@@ -14,7 +14,7 @@ function App() {
   return (
    <>
     <Header/>
-    <Main/>
+    <Form/>
     <Footer/>
     
    </>
