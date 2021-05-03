@@ -13,7 +13,7 @@
 
 ## UML Image:
 
-![UML](https://github.com/HaneenKh88/RESTy/blob/base/react-app/assests/lab26.png)
+![UML](https://github.com/HaneenKh88/RESTy/blob/main/assests/lab26.png)
 
 
 ****************************************************************************************************
