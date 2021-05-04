@@ -2,12 +2,11 @@
 
 ### Deploy link on Netlify:
 
-[Netlify](https://6090afd91416dd7670921ba8--resty-lab27.netlify.app/)
+[Netlify](https://resty-28.netlify.app/)
 
 ### Pull Request Link
 
-[RESTy](https://github.com/HaneenKh88/RESTy/pull/8)
-
+[RESTy](https://github.com/HaneenKh88/RESTy/pull/9)
 
 ****************************************************************************************************
 
