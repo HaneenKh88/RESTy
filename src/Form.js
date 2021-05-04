@@ -33,7 +33,7 @@ class Form extends React.Component {
         } else {
         const data=  await superagent[this.state.methodVal.toLowerCase()](e.target.url.value);
         // console.log(data);
-        let counter = data.body.count;
+        // let counter = data.body.count;
         this.props.handler(data, this.state)
         // console.log(counter);
       
