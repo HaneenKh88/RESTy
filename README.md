@@ -2,18 +2,18 @@
 
 ### Deploy link on Netlify:
 
-[Netlify](https://608ecfb57010f9c2fdb8013d--rest-haneen.netlify.app/)
+[Netlify](https://609001320b164e9b26689a1e--rest-haneen88.netlify.app/)
 
 ### Pull Request Link
 
-[RESTy](https://github.com/HaneenKh88/RESTy/pull/2)
+[RESTy](https://github.com/HaneenKh88/RESTy/pull/6)
 
 
 ****************************************************************************************************
 
 ## UML Image:
 
-![UML](https://github.com/HaneenKh88/RESTy/blob/base/react-app/assests/lab26.png)
+![UML](https://github.com/HaneenKh88/RESTy/blob/main/assests/lab26.png)
 
 
 ****************************************************************************************************
