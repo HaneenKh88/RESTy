@@ -13,5 +13,5 @@ test('need to run the handler on button click', async () => {
      
       }
   });
-//   await waitFor(() => expect(handler).toHaveBeenCalled());
+  await waitFor(() => expect(handler).toHaveBeenCalled());
 });

@@ -1,0 +1,33 @@
+table
+{
+   
+    tr
+    {
+        border-bottom: 2px solid black;
+   
+    }
+
+    th
+    {
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+
+    }
+
+}
+
+tbody
+{
+    .fwidth
+    {
+        background-color: green;
+        color: white;
+    }
+}
+
+#history
+{
+    margin-left: 10px;
+    margin-bottom: 60px ;
+}
