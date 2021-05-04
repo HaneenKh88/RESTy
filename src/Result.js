@@ -17,7 +17,7 @@ import ReactJson from 'react-json-view';
           IndentWidth = {1}
         />
         <ReactJson
-          src={props.result}
+          src={props.result.body}
           name="Response"
           iconStyle={'circle'}
           collapsed={1}
