@@ -11,16 +11,20 @@
         .method
         {
             margin-left: 10px;
-            
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            border: 2px solid green;
         }
 
         .true
         {
             background-color: white;
+            color: rgb(0, 56, 0);
         }
         margin-bottom: 20px;
 
-       
+       margin-top: 20px;
     }
 
     .User-Input
@@ -42,5 +46,19 @@
     {
         padding: 20px;
         text-align: left;
+    }
+
+    .GO
+    {
+        background-color: black;
+        color: rgb(10, 190, 49);
+        margin-left: 10px;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+    .GO:hover
+    {
+        background-color: rgb(2, 68, 2);
+        color: white;
     }
 }

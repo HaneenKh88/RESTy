@@ -8,17 +8,16 @@ function History({ result }) {
       <table>
         <thead>
           <tr>
-            <th className="fwidth">Method</th>
+            <th className="methodClass">Method</th>
             <th>URL</th>
           </tr>
         </thead>
-        
         <tbody>
-          
+
           {result.map((val, i) => {
             return (
               <tr key={i} data-testid="url">
-                <td className="fwidth">{val.method}</td>
+                <td className="methodClass">{val.method}</td>
                 <td>{val.url}</td>
               </tr>
             );

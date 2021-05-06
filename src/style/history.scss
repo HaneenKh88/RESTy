@@ -1,6 +1,7 @@
 table
 {
-   
+    width:100px;
+    float: left;
     tr
     {
         border-bottom: 2px solid black;
@@ -14,17 +15,46 @@ table
     color: white;
 
     }
+   
+    margin-top: 40px;
 
 }
 
 tbody
 {
-    .fwidth
+    .methodClass
     {
         background-color: green;
         color: white;
     }
+    button
+    {
+        background-color: black;
+        color: rgb(10, 190, 49);
+        // margin-left: 10px;
+        border: 2px solid black;
+        border-radius: 5px;
+
+        &:hover
+        {
+            
+            background-color: rgb(2, 68, 2);
+            color: white;
+        }
+
+    }
+
+
 }
+
+
+    .history
+    {
+        text-align: center;
+        background-color: black;
+        color: rgb(255, 255, 255);
+        width: 550px;
+    }
 
 #history
 {
