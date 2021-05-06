@@ -58,7 +58,7 @@ class HistoryPage extends React.Component {
             <Else>
               {console.log(this.props.body)}
             <ReactJson
-          src={this.state.body.headers}
+          src={this.state.headers}
           name="Headers"
           iconStyle={'circle'}
           collapsed={1}
