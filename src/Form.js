@@ -27,6 +27,7 @@ class Form extends React.Component {
           const result = await superagent[this.state.methodVal.toLowerCase()](
             e.target.url.value
           ).send(reqBody);
+          console.log("this data" ,result )
           
         
           this.props.handler( result, this.state);
@@ -40,7 +41,8 @@ class Form extends React.Component {
       }
       }
       catch(error){
-        console.error(error)
+        console.error(error);
+        this.props.handler(error.message , "Error in geting data")
       }
         
     };
@@ -67,7 +69,7 @@ class Form extends React.Component {
            <input className={`method ${this.state.method === 'GET'}`} type="button"name= "method" value= "GET" onClick={() => this.setState({method: 'GET'})} />
            <input className={`method ${this.state.method === 'POST'}`} type="button" value= "POST" onClick={() => this.setState({method: 'POST'})} />
            <input className={`method ${this.state.method === 'PUT'}`} type="button" value= "PUT" onClick={() => this.setState({method: 'PUT'})} />
-           <input className={`method ${this.state.method === 'DELETE'}`} type="button" value= "Delete" onClick={() => this.setState({method: 'Delete'})} />
+           <input className={`method ${this.state.method === 'Delete'}`} type="button" value= "Delete" onClick={() => this.setState({method: 'Delete'})} />
            
           </form>
   
