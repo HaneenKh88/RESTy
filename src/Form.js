@@ -1,4 +1,4 @@
-import { If, Then, Else } from 'react-if';
+import { If, Then} from 'react-if';
 import React from 'react';
 const superagent = require('superagent');
 
