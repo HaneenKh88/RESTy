@@ -96,7 +96,7 @@ class Form extends React.Component {
           <If condition={this.state.Loading === true}>
             <Then>
                 <div id='loading'></div>
-                <img id="loadingImg" src="https://media.istockphoto.com/videos/loading-circle-icon-on-white-background-animation-video-id1093418606?s=640x640"/>
+                <img id="loadingImg" src="https://media.istockphoto.com/videos/loading-circle-icon-on-white-background-animation-video-id1093418606?s=640x640" alt="loading"/>
             </Then>
           </If>
        
