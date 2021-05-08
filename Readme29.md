@@ -6,8 +6,7 @@
 
 ### Pull Request Link
 
-[RESTy](https://github.com/HaneenKh88/RESTy/pull/10)
-
+[RESTy](https://github.com/HaneenKh88/RESTy/pull/13)
 
 ****************************************************************************************************
 
