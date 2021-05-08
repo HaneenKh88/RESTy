@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactJson from 'react-json-view';
+import { NavLink } from 'react-router-dom';
 import { If, Then, Else } from '../src/if/index';
 
 class HistoryPage extends React.Component {
@@ -17,15 +18,25 @@ class HistoryPage extends React.Component {
   }
   dataHandling = (data) => {
 
-    this.setState({ body: data});
-    // localStorage.setItem('data', JSON.stringify(data));
+    this.setState({ body: data });
+    console.log("data", data);
+    localStorage.setItem('data', JSON.stringify(data));
   };
+
+  // AutoHandler(e) {
+
+  //   let method = e.currentTarget.childNodes[0].innerHTML;
+  //   let url = e.currentTarget.childNodes[1].innerHTML;
+  //   console.log("target", e.currentTarget.childNodes[1].innerHTML);
+  //   console.log(e);
+  // }
 
   render() {
 
     return (
       <section id="history">
         <h3 className="history"> History</h3>
+
         <table>
 
 
@@ -35,11 +46,22 @@ class HistoryPage extends React.Component {
               <Then>
                 {this.state.api.map((val, i) => {
                   return (
-                    <tr key={i + val.method + val.url + val.body} data-testid="url" onClick={() => {this.dataHandling(val)}}>
-                      
+                    <tr key={i + val.method + val.url + val.body} data-testid="url" onClick={() => { this.dataHandling(val) }}>
+
                       <td className="methodClass">{val.method}</td>
                       <td>{val.url}</td>
-                      <td> <button onClick={() => this.props.history.push('/', { data: this.state.body })}> Go To Home</button></td>
+                      <NavLink
+                        to={{
+                          pathname: '/',
+                          body: {
+                            method: this.state.body.method,
+                            url: this.state.body.url,
+                            data: this.state.body.data,
+                          },
+                        }}
+                      >
+                        Re-Run
+					</NavLink>
                     </tr>
                   );
 
@@ -57,24 +79,24 @@ class HistoryPage extends React.Component {
             </Then>
             <Else>
               {console.log(this.props.body)}
-            <ReactJson
-          src={this.state.headers}
-          name="Headers"
-          iconStyle={'circle'}
-          collapsed={1}
-          enableClipboard={false}
-          displayDataTypes={false}
-          IndentWidth = {1}
-        />
-        <ReactJson
-          src={this.state}
-          name="Response"
-          iconStyle={'circle'}
-          collapsed={1}
-          enableClipboard={false}
-          displayDataTypes={false}
-          IndentWidth = {1}
-        />
+              <ReactJson
+                src={this.state.headers}
+                name="Headers"
+                iconStyle={'circle'}
+                collapsed={1}
+                enableClipboard={false}
+                displayDataTypes={false}
+                IndentWidth={1}
+              />
+              <ReactJson
+                src={this.state}
+                name="Response"
+                iconStyle={'circle'}
+                collapsed={1}
+                enableClipboard={false}
+                displayDataTypes={false}
+                IndentWidth={1}
+              />
             </Else>
           </If>
 
